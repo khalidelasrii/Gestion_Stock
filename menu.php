@@ -9,13 +9,13 @@
                 <ul>
 
                     <li>
-                        <a href="#" class="side-menu <?php if($page == 'dashbord') {?> side-menu--active <?php } ?>">
+                        <a href="../dashbord/index.php" class="side-menu <?php if($page == 'dashbord') {?> side-menu--active <?php } ?>">
                             <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
                             <div class="side-menu__title"> Dashboard </div>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;" class="side-menu">
+                        <a href="../produit/index.php" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
                             <div class="side-menu__title">
                                 Produit 
@@ -41,10 +41,6 @@
                             
                         </ul>
                     </li>
-
-
-
-
                       <li>
                         <a href="../profile/" class="side-menu  <?php if($page == 'profile') {?> side-menu--active <?php } ?>">
                             <div class="side-menu__icon"> <i data-lucide="users"></i> </div>

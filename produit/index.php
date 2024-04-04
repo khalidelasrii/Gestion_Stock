@@ -1,4 +1,16 @@
+<?php
+
+session_start();
+if ( !isset($_SESSION['id_user']) || (isset($_SESSION['id_user']) && $_SESSION['id_user'] == '') )
+ {
+ 	header("Location: ../login.php");
+ } 
+
+?>
+
 <!DOCTYPE html>
+
+
  
 <html lang="en" class="light">
     <!-- BEGIN: Head -->

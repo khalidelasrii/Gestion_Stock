@@ -4,14 +4,10 @@ session_start();
 
 if ( !isset($_SESSION['id_user']) || (isset($_SESSION['id_user']) && $_SESSION['id_user'] == '') )
  {
- 	header("Location: login.php?erreur_session");
+ 	header("Location: ../login.php");
  } 
 
 
  echo $_SESSION['nom_user'];
-
-
-
-
 
  ?>
