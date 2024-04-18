@@ -121,7 +121,7 @@ if (isset($_POST['login']))
     
         
         <!-- BEGIN: JS Assets-->
-        <script src="dist/js/app.js"></script>
+        <script src="./dist/js/app.js"></script>
         <!-- END: JS Assets-->
     </body>
 </html>

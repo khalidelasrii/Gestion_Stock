@@ -1,6 +1,16 @@
 
 
-                
+<?php
+    if(isset($_GET['logout'])) {
+        // Destroy the session
+        session_unset();
+        session_destroy();
+
+        // Redirect to the login page or any other desired page
+        header("Location: ../login.php");
+        exit;
+    }
+?>
                 <div class="top-bar">
                     <!-- BEGIN: Breadcrumb -->
                     <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
@@ -188,16 +198,7 @@
                                     <hr class="dropdown-divider border-white/[0.08]">
                                 </li>
                                 <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                                    <a href="./update_profile.php" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit Account </a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider border-white/[0.08]">
